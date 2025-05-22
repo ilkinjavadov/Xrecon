@@ -66,7 +66,7 @@ This tool uses the GitHub API to fetch only **publicly available data**. It does
 ---
 
 ## 👨‍💻 Author
-Made with ❤️ by [Your Name] — Ethical Hacker | Offensive Security Specialist
+Made with ❤️ by Ilkin Javadov — World Class Ethical Hacker | Senior Penetration Tester
 
 ---
 
