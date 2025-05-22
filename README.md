@@ -44,7 +44,7 @@ python xrecon.py --target github_username --token $GITHUB_TOKEN
 
 ## 📁 Example Output
 ```
-[+] Starting GitHub scan for target: openai
+[+] Starting GitHub scan for target: Target Repo
 [+] Generating report...
 [+] Scan complete. Report saved to output/results.md
 ```
