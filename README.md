@@ -1,5 +1,9 @@
 # XRecon - GitHub Recon Tool for Ethical Hackers
 
+<p align="center">
+  <img src="/modules/xrecon.png" alt="XRecon Logo" width="250" />
+</p>
+
 **XRecon** is a lightweight, GitHub-based reconnaissance tool designed for red teamers, bug bounty hunters, and offensive security professionals. It scans public repositories of a given GitHub user or organization and identifies potentially sensitive files based on filename patterns.
 
 ---
@@ -17,7 +21,7 @@
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/xrecon.git
+git clone https://github.com/ilkinjavadov/xrecon.git
 cd xrecon
 ```
 
