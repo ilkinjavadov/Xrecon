@@ -34,7 +34,20 @@ def scan_github(target, token):
             if file['type'] != 'file':
                 continue
             filename = file['name'].lower()
-            if any(keyword in filename for keyword in SENSITIVE_KEYWORDS):
+            match_in_name = any(keyword in filename for keyword in SENSITIVE_KEYWORDS)
+            file_url = file['download_url']
+
+            match_in_content = False
+            try:
+                content_response = requests.get(file_url)
+                if content_response.status_code == 200:
+                    content_text = content_response.text.lower()
+                    if any(keyword in content_text for keyword in SENSITIVE_KEYWORDS):
+                        match_in_content = True
+            except:
+                pass
+
+            if match_in_name or match_in_content:
                 findings.append({
                     'repository': repo_name,
                     'file': file['name'],
