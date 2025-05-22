@@ -11,7 +11,7 @@
 ## 🔍 Features
 
 - Scans all public repositories of a target GitHub user/org
-- Detects filenames that may contain secrets (e.g., `apikey`, `token`, `password`, etc.)
+- Detects filenames (also contents) that may contain secrets (e.g., `apikey`, `token`, `password`, etc.)
 - Outputs a clean Markdown report with direct links to files
 - Simple CLI interface
 
